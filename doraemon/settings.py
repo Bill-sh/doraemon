@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-y@0w&v-my_2h#^r2fitny8&u1m-uz9j=m#rl)&5r(f)xlco4o@
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'service-kq8occro-1303058007.gz.apigw.tencentcs.com'
+    'service-kq8occro-1303058007.gz.apigw.tencentcs.com',
+    '127.0.0.1'
 ]
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
 
     'lolin.apps.LolinConfig'
 ]
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'doraemon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
