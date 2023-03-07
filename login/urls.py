@@ -3,7 +3,6 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter(trailing_slash=True)
-router.register(r'student/', views.StudentsViewSet, basename='student')
-router.register(r'class/', views.ClassNameViewSet, basename='class')
+router.register(r'', views.AuthViewSet, basename='auth')
 
 urlpatterns = router.urls
