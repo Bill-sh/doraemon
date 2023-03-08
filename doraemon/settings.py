@@ -82,10 +82,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 默认
         'NAME': 'doraemon',  # 连接的数据库
-        'HOST': 'gz-cynosdbmysql-grp-oruhuv8d.sql.tencentcdb.com',  # mysql的ip地址
-        'PORT': 24966,  # mysql的端口
+        'HOST': 'sh-cynosdbmysql-grp-7lv88yoq.sql.tencentcdb.com',  # mysql的ip地址
+        'PORT': 29169,  # mysql的端口
         'USER': 'root',  # mysql的用户名
-        'PASSWORD': '^C41e&!D'  # mysql的密码
+        'PASSWORD': 'Exchange11235813'  # mysql的密码
     }
 }
 
