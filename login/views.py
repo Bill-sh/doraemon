@@ -26,4 +26,12 @@ class AuthViewSet(ViewSet):
         token, created = Token.objects.get_or_create(user=user)
 
         return Response(
-            {'token': token.key, 'user': {'name': user.get_full_name().replace(' ', '')}})
+            {
+                'token': token.key,
+                'user':
+                    {
+                        'name': user.get_full_name().replace(' ', ''),
+                        'groups': [i['name'] for i in list(user.groups.all().values('name'))]
+                    }
+            }
+        )
