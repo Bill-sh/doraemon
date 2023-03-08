@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[359],{50321:function(l,n,t){t.r(n);var e=t(9927),u=t(85893);n.default=function(){var a=(0,e.useModel)("@@initialState"),i=a.initialState;return(i==null?void 0:i.name)!=="\u6E38\u5BA2"?(0,u.jsx)(e.Outlet,{}):(0,u.jsx)(e.Navigate,{to:"/login"})}}}]);
