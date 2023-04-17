@@ -21,6 +21,7 @@ scheduler.add_job(
     my_job,  # 作业函数
     'cron',  # 触发器类型
     hour=21,
+    minute=5,
     id='my_job',  # 作业 id
     replace_existing=True,
 )
