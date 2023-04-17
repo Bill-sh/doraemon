@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
+    'django_apscheduler',
     'rest_framework.authtoken',
     'lolin.apps.LolinConfig',
 ]
@@ -128,3 +129,15 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 自动启动django-apscheduler调度器
+SCHEDULER_AUTOSTART = True
+
+# 邮件配置
+
+EMAIL_HOST = "smtp.163.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "gg576882002@163.com"
+EMAIL_HOST_PASSWORD = "GWESDJNRRPHPVSCJ"
+EMAIL_USE_TLS = False
+EMAIL_FROM = "gg576882002@163.com"
