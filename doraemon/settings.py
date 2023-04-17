@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
-    'django_apscheduler',
     'rest_framework.authtoken',
     'lolin.apps.LolinConfig',
 ]
